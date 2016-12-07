@@ -29,40 +29,11 @@ namespace MefPractice
         [Import]
         public IComplexOp ComplexOp;
 
-        public Program()
-        {
-            //Compose();
-        }
-
         static void Main(string[] args)
-        {
-            /*
-            var e1 = new Employee{ EmpId = 1, EmpName = "Test" };
-            var elist = new EmployeeList();
-            elist.EmployeeAdded += ElistOnEmployeeAdded;
-            elist.EmployeeAdded += ElistOnEmployeeAdded2;
-            elist.Add(e1);
-            //elist.AddDup(e1);
-            //elist.Fire();
-
-            var c = new CustEmployeeList();
-            c.Add(e1);
-            c.ForEach(e => Console.WriteLine(e.EmpName));
-            */
-
+        {            
             var program = new Program();
             program.Compose();
             program.Run();
-        }
-
-        private static void ElistOnEmployeeAdded2(EventArgs eventArgs)
-        {
-            Console.WriteLine("added!!!");
-        }
-
-        private static void ElistOnEmployeeAdded(EventArgs eventArgs)
-        {
-            Console.WriteLine("added an employee");
         }
 
         // http://blog.thekfactor.info/wp-content/uploads/2015/05/mef.png
@@ -132,18 +103,6 @@ namespace MefPractice
             {
                 ComplexOp.DoSomething();
             }
-        }
-
-        void ComposeTest()
-        {
-            var catalog = new DirectoryCatalog(AppDomain.CurrentDomain.BaseDirectory);
-            var aggreagateCatalog =
-                new AggregateCatalog(new ComposablePartCatalog[]
-                    {catalog, new AssemblyCatalog(Assembly.GetExecutingAssembly())});
-            var container = new CompositionContainer(aggreagateCatalog);
-            var batch = new CompositionBatch();
-            batch.AddPart(this);
-            container.Compose(batch);
         }
     }
 }
