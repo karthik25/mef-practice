@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MefPractice", "MefPractice\MefPractice.csproj", "{DAC959EA-44C7-4BE4-9FE2-9E79F9C1BF08}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MefContracts", "MefContracts\MefContracts.csproj", "{38611EC9-7EAD-42B8-86B7-7728D51FCA9E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MefLib", "MefLib\MefLib.csproj", "{B4BFB314-3ECB-4608-8617-1EDC85D9B898}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DAC959EA-44C7-4BE4-9FE2-9E79F9C1BF08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAC959EA-44C7-4BE4-9FE2-9E79F9C1BF08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAC959EA-44C7-4BE4-9FE2-9E79F9C1BF08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAC959EA-44C7-4BE4-9FE2-9E79F9C1BF08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38611EC9-7EAD-42B8-86B7-7728D51FCA9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38611EC9-7EAD-42B8-86B7-7728D51FCA9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38611EC9-7EAD-42B8-86B7-7728D51FCA9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38611EC9-7EAD-42B8-86B7-7728D51FCA9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4BFB314-3ECB-4608-8617-1EDC85D9B898}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4BFB314-3ECB-4608-8617-1EDC85D9B898}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4BFB314-3ECB-4608-8617-1EDC85D9B898}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4BFB314-3ECB-4608-8617-1EDC85D9B898}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
